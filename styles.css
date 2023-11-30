@@ -1,0 +1,62 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    max-width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Input Group Styling */
+.input-group {
+    margin-bottom: 2%;
+    flex: 0 0 100%;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 2%;
+}
+
+/* Set same width and height for all inputs */
+.input-group input,
+.input-group textarea {
+    width: calc(100% - 2%); /* Consider border width */
+    padding: 1%;
+    border-radius: 5px; /* Make input border rounded */
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    margin-bottom: 1%;
+}
+
+/* Make textarea non-resizable */
+.input-group textarea {
+    resize: none;
+}
+
+/* Inline Input Group Styling */
+.input-group.inline {
+    flex: 0 0 calc(48% - 2%); /* Adjust width for each inline group */
+    margin-right: 4%;
+}
+
+
+/* Image Container Styling */
+.image-container {
+    flex: 0 0 100%; /* Image should take full width on large screens */
+    margin-top: 2%;
+}
+
+.image-container img {
+    border-radius: 5px;
+    width: 100%; /* Make image take full width */
+    height: auto; /* Maintain aspect ratio */
+}
